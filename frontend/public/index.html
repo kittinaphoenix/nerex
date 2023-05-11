@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NER - NLP</title>
+<script>
+window.API_URL = "http://127.0.0.1:5000";
+</script>
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">NER - NLP</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li >
+          <a class="dropdown-trigger" href="#" data-target="dropdown1">Extract</a>
+          <ul id="dropdown1" class="dropdown-content"></ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="ner-container">
+    <div class="row">
+      <div class="col s6 ner-left-side">
+        <h5 id="inputTitle">Input Text</h5>
+        <textarea id="inputText" class="materialize-textarea green-border"></textarea>
+      </div>
+      <div class="col s6">
+        <div class="tabs-container" style="margin-top: 3px;"></div>
+        <div  id="resultContainer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="libs/materialize.min.js"></script>
+<script src="libs/all.min.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>

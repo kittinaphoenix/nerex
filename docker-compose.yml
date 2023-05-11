@@ -1,0 +1,23 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    environment:
+      PORT: ${BACKEND_PORT}
+    networks:
+      - app-network
+  frontend:
+    build: ./frontend
+    ports:
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
+    environment:
+      API_URL: ${API_URL}
+      FRONTEND_PORT: ${FRONTEND_PORT}
+    depends_on:
+      - backend
+    networks:
+      - app-network
+networks:
+  app-network:

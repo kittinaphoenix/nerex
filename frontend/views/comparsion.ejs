@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NER - NLP</title>
+<script>
+window.API_URL = '<%= API_URL %>' || "http://127.0.0.1:5000";
+</script>
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">NER - NLP</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>
+          <a class="dropdown-trigger" href="#" data-target="dropdown1">Analyze</a>
+          <ul id="dropdown1" class="dropdown-content"></ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h4>Input Texts</h4>
+        <div class="input-field col s6">
+          <textarea id="textArea1" class="materialize-textarea"></textarea>
+          <label for="textArea1">Text 1</label>
+        </div>
+        <div class="input-field col s6">
+          <textarea id="textArea2" class="materialize-textarea"></textarea>
+          <label for="textArea2">Text 2</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ner-container">
+  </div>
+<script src="libs/materialize.min.js"></script>
+<script src="libs/all.min.js"></script>
+<script src="src/app.comparsion.js"></script>
+</body>
+</html>

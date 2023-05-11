@@ -1,0 +1,5 @@
+Flask==2.2.3
+pandas==2.0.1
+spacy==3.5.2
+transformers==4.28.1
+word2number==1.1
