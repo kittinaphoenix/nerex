@@ -34,7 +34,7 @@ Extracts information from text using the specified method.
   "text1": "Sample text 1",
   "text2": "Sample text 2"
 }
-
+```
 'text' is required for all methods except comparsion.
 'text1' and 'text2' are required only for the comparsion method.
 
